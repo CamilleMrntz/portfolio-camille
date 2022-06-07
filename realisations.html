@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<header>
+    <div>
+        <p class="prenom">Camille</p>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="nav-active" href="realisations.html">Réalisations</a></li>
+            <li><a href="cv.html">CV</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="realisations-nb"><p id="nb-projet"></p><p>Projets</p></div>
+    <main class="page-realisation">
+
+        <div class="card-realisation">
+            <img src="img/img-real/coming soon.png" alt="illustration">
+            <div>
+                <h3>Page d'accueil d'un site à venir</h3>
+                <p>Réalisation en HTML - CSS de la page d'accueil d'un site à venir avec un champ pour renseigner son adresse mail dans le cas où l'on voudrait être informé de la sortie du site.</p>
+            </div>
+            <a href="realisations/comingsoon.html">Voir plus</a>
+        </div>
+        <div class="card-realisation">
+            <img src="img/img-real/formulaire.png" alt="illustration">
+            <div>
+                <h3>Formulaire</h3>
+                <p>Réalisation d'un formulaire en HTML - CSS</p>
+            </div>
+            <a href="realisations/formulairehetic.html">Voir plus</a>
+        </div>
+        <div class="card-realisation">
+            <img src="img/img-real/mealtips.png" alt="illustration">
+            <div>
+                <h3>Mealtips</h3>
+                <p>Projet de recherche UX premièrement, puis UI sur Figma et enfin code de l'application. Le thème du projet était : "Manger sainement". Il nous a donc fallu élaborer des sondages et questionner des personnes dans la rue afin de mettre en lumière un besoin général en rapport avec ce thème. Nous avons donc trouvé interessant de développer une application qui met en relation des professionnels de la nutrition avec des particuliers (sur le modèle de Doctolib) mais avec un coté ludique et une atmosphère beaucoup moins froide grâce à l'autre fonctionnalité de l'application qui est celle d'avoir un feed de recettes saines. L'application est à la fois un atout pour les professionnels qui peuvent se faire connaître du fait de l'aspect réseau social que l'on propose sans pour autant avoir les déviances de ces derniers et à la fois l'application est aussi un atout pour les particuliers qui peuvent trouver des recettes saines à réaliser et peuvent trouver des professionnels de santé très accessibles.</p>
+            </div>
+            <a href="realisations/mealtips.html">Voir plus</a>
+        </div>
+        <div class="card-realisation">
+            <img src="img/img-real/tinkuy.png" alt="illustration">
+            <div>
+                <h3>Refonte de Tinkuy</h3>
+                <p>Travail entièrement réalisé sur Figma. Le but a été de revoir toute la charte graphique du site. Les couleurs, les icônes, le logo, la typographie, et la disposition du site. Le design que j'ai proposé est plutôt épuré avec des touches de rose et un environnement facile à comprendre, le but de la marque étant d'être ludique sur des questions sociales, de dépenses et d'environnement.</p>
+            </div>
+            <a href="realisations/tinkuy.html">Voir plus</a>
+        </div>
+        <div class="card-realisation">
+            <img src="img/img-real/todo.png" alt="illustration">
+            <div>
+                <h3>To-do list</h3>
+                <p>Réalisation d'une to do list grâce à JavaScript. La base est réalisée en html et les éléments rentrés dans la barre sont ensuite associés, grâce au Javascript, à la bonne colonne. Un compteur de tâches pour chaque catégorie et pour les tâches effectuées est aussi implémenté grâce au JavaScript.</p>
+            </div>
+            <a href="realisations/todo.html">Voir plus</a>
+        </div>
+        <div class="card-realisation">
+            <img src="img/img-real/chess.png" alt="illustration">
+            <div>
+                <h3>Chess</h3>
+                <p>Réalisation d'un tableau de jeu d'échec. Le tableau est réalisé presque entièrement en JavaScript. Inversion des couleurs marron et blancs d'une ligne à l'autre. Numérotation et alphabétisation des cases.</p>
+            </div>
+            <a href="realisations/chess.html">Voir plus</a>
+        </div>
+        <div class="card-realisation">
+            <img src="img/img-real/one_v_one.png" alt="illustration">
+            <div>
+                <h3>Fighters</h3>
+                <p>Réalisation d'un petit jeu inspiré de Street Fighters.</p>
+            </div>
+            <a href="realisations/one_v_one.html">Voir plus</a>
+        </div>
+    </main>
+    <footer>
+        <p>camille.1@hotmail.fr</p>
+        <p>06 65 44 84 95</p>
+    </footer>
+
+<script>
+    const projetCount = document.querySelectorAll('.card-realisation').length;
+    let nb_projet = document.getElementById('nb-projet')
+    nb_projet.innerText = projetCount;
+</script>
+
+</body>
+</html>
