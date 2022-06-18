@@ -309,20 +309,6 @@ a:hover {
   gap: 10px;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15vh;
-  background-image: url("img/footer_3.jpg");
-  background-position-y: 17%;
-  background-size: 100vw;
-  font-size: 20px;
-  font-weight: 500;
-  color: #fffffd;
-  gap: 30vw;
-}
-
 @media (max-width: 860px) {
 
 
@@ -512,5 +498,26 @@ footer {
   .container {
     width: 100vw;
   }
+}
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  background-image: url("img/footer_3.jpg");
+  background-position-y: 17%;
+  background-size: 100vw;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fffffd;
+  gap: 30vw;
+}
+
+footer p {
+  flex-wrap: nowrap;
 }
 
