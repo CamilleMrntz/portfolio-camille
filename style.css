@@ -428,6 +428,8 @@ a:hover {
 .text-real {
   width: 60vw;
   margin-block: 2.875rem;
+  text-align: justify;
+  line-height: 22px;
 }
 
 
